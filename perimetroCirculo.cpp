@@ -1,6 +1,6 @@
 //criando uma aplicação capaz de calcular a área e o perímetro de um circulo. 
 
-#include <iostream>
+#include <iostream> //chamar entrada e saída
 #include <cmath>
 
 using namespace std;

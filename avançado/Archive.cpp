@@ -1,29 +1,29 @@
 //Programa em c++ que lê arquivos. 
 
-#include <iostream>
-#include <fstream>
+#include <iostream> //entrada e saída de teclado. 
+#include <fstream> //put para arquivos. 
 
 using namespace std;
 
 int main()
 {
-    ifstream fp;
+    ifstream fp; //instanciando. 
 
-    char fnome[13];
+    char fnome[13]; //variável com o nome do arquivo - máximo de 13 caracteres
     char ch;
 
-    cout << "Entre com um nome de arquivo: ";
-    cin >> fnome;
+    cout << "Entre com um nome de arquivo: "; //saída do programa
+    cin >> fnome; //a entrada do cliente. 
 
     fp.open(fnome, ios::in); //Abre arquivo
 
-    if (fp.fail()) 
+    if (fp.fail()) //rotas de possibilidades. 
     {
-        printf("Erro ao abrir %s\n", fnome);
+        printf("Erro ao abrir %s\n", fnome); //se o arquivo não for encontrado. 
     }
     else 
     {
-        printf ("Arquivo aberto com sucesso. \n");
+        printf ("Arquivo aberto com sucesso. \n"); //se for encontrado; abre o arquivo e retorna sucesso
     }
 
     while((ch = fp.get()) != EOF)

@@ -1,4 +1,4 @@
-//Programa em c++ que lê arquivos. 
+//Construção de um programa que usa o fstream para fazer o get de arquivos na pasta. 
 
 #include <iostream> //entrada e saída de teclado. 
 #include <fstream> //put para arquivos. 
@@ -19,7 +19,7 @@ int main()
 
     if (fp.fail()) //rotas de possibilidades. 
     {
-        printf("Erro ao abrir %s\n", fnome); //se o arquivo não for encontrado. 
+        printf("Erro ao abrir %s\n", fnome); //erro: se o arquivo não for encontrado. 
     }
     else 
     {

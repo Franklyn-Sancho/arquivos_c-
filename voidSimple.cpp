@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-void instrucoes(void) 
+int main(void) 
 {
     int ch;
 
@@ -11,8 +11,8 @@ void instrucoes(void)
     ch = cin.get();
 
     if (ch == 'n' || ch == 'N' )
-        return;
+        return false;
 
-    cout << "as regras do jogo são... ";
-        return;
+    cout << "escrever as instruções aqui... ";
+        return false;
 }
